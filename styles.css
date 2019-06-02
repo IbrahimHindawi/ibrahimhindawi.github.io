@@ -10,7 +10,7 @@ body
 
 #header 
 {
-	background-color: black;
+	background-color: #0f0f0f;
 	height: 150px;
 	line-height: 150px;
 }
@@ -59,8 +59,11 @@ body
 
 #footer 
 {
-	background-color: white;
+	background-color: #0f0f0f;
 	padding: 50px 0;
+  margin-top: 250px;
+
+
 }
 
 .fcolumn
@@ -75,16 +78,19 @@ body
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+  /*margin-top: 50px;*/
+
 }
 
 #footer p
 {
 	color:white;
+
 }
 
 a 
 {
-	color: #3c116d;
+	color: white;
 	text-decoration: none;
 }
 
@@ -125,11 +131,12 @@ a:hover
 
 h1, h2, h3, h4
 {
-	color: #333;
+	color: white;
 }
 
 p
 {
+  color: white;
 	line-height: 1.5;
 }
 
