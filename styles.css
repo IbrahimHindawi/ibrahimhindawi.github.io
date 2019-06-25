@@ -208,7 +208,7 @@ p
   flex: 25%;
   overflow: hidden;
   cursor: pointer;
-  transform: scale(0.45);
+  transform: scale(0.75);
 }
 
 .gallery-section .image img{
