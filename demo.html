@@ -22,7 +22,7 @@
 
 
 
-<!-- hero START -->
+	<!-- hero START -->
 	<section class="hero  is-small is-black">
 		<!-- Hero head: will stick at the top -->
 		<div class="hero-head">
@@ -56,51 +56,61 @@
 				</nav>
 			</div>
 		</section>
-<!-- hero END -->
-<!-- body START -->
+
+		<!-- HERO END -->
+
+		<!-- BODY START -->
 		<body>
 
 
-    <section class = "section has-background-dark" >
-        <div class="container" style = "padding: 260px 0">
-            <div class="columns is-mobile">
-                <div class="column">
-                	<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/N6kLlfvLpl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- <youtube :video-id="video1"></youtube> -->
-                     <iframe width="100%" height="auto" src="https://www.youtube.com/embed/xxxxxxx" allowfullscreen></iframe> 
-                </div>
-                <div class="column">
-                	<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/sMp-QTcDpHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- <youtube :video-id="video2"></youtube> -->
-                     <iframe width="100%" height="auto" src="https://youtube.com/embed/xxxxxxx" allowfullscreen></iframe> 
-                </div>
-            <!-- </div>
-            <div class="columns"> -->
-                <div class="column">
-                    <!-- <youtube :video-id="video3"></youtube> -->
-                    <iframe width="100%" height="auto" src="https://youtube.com/embed/xxxxxxx" allowfullscreen></iframe>
-                </div>
-                <div class="column">
-                    <!-- <youtube :video-id="video4"></youtube> -->
-                    <iframe width="100%" height="auto" src="https://youtube.com/embed/xxxxxxx" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+			<style>
+				.video-container
+				{
+					width: 100%;
+					height: 0px;
+					padding-bottom: 56.25%;
+					position: relative;
+				}
+				.video-container iframe
+				{
+					position: absolute;
+					width:100%;
+					height: 100%;
+				}
+				.text
+				{
+					background-color: black;
+					color: white;
+				}
+			</style>
 
+				<p class = "text">SOME TEXT...</p>
+				<div class="video-container">
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/N6kLlfvLpl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="image" ></iframe>
+				</div>
+				<p class = "text">SOME TEXT...</p>
+				<div class="video-container">
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/N6kLlfvLpl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="image" ></iframe>
+				</div>
+				<p class = "text">SOME TEXT...</p>
+				<div class="video-container">
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/N6kLlfvLpl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="image" ></iframe>
+				</div>
+				<p class = "text">SOME TEXT...</p>
+				<div class="video-container">
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/N6kLlfvLpl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="image" ></iframe>
+				</div>
 
+			<footer class="footer has-background-black ">
+				<div class="content has-text-centered ">
+					<div class="container has-text-centered">
+						<p class = "is-size-24 has-text-dark">
+							ALL IMAGES ARE COPYRIGHTED TO THEIR RESPECTIVE RIGHTHOLDERS. UNAUTHORIZED USE OR REPRODUCTION IS NOT ALLOWED
+						</p>
+					</div>
+				</div>
+			</footer>
+		</body>
+		<!-- BODY END -->
 
-
-
-<footer class="footer has-background-black ">
-	<div class="content has-text-centered ">
-		<div class="container has-text-centered">
-			<p class = "is-size-24 has-text-dark">
-				ALL IMAGES ARE COPYRIGHTED TO THEIR RESPECTIVE RIGHTHOLDERS. UNAUTHORIZED USE OR REPRODUCTION IS NOT ALLOWED
-			</p>
-		</div>
-	</div>
-</footer>
-</body>
-
-</html>
+		</html>

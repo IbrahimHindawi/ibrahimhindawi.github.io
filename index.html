@@ -5,12 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<meta name="viewport" content = "width = device-width, initial-scale=1.0">
 
-</head>
-<!--<body style = "background-color: #282828;">-->
+
+	<body>
+
+	</head>
+	<!--<body style = "background-color: #282828;">-->
 
 
 
@@ -20,10 +26,10 @@
 	</p>-->
 
 
+	<!-- FOOTER BEGIN -->
 
 
-
-	<section class="hero  is-small is-black">
+	<section class="hero  is-small">
 		<!-- Hero head: will stick at the top -->
 		<div class="hero-head">
 
@@ -56,149 +62,144 @@
 				</nav>
 			</div>
 		</section>
+		<!-- FOOTER END -->
 
 		<body>
+			<section>
 
 
-			<section class = "section has-background-dark">
-				<div class = "container  has-background-dark" style = "padding: 135px 0">
-					<div class = "tile is-ancestor ">
-						<div class = "tile is-1 is-vertical is-parent is-half-on-mobile">
-
-							<figure class="image is-square ">
-								<img src="swan_th.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" >
-							</figure>
+				<div class="gallery-section">
+					<div class="inner-width">
+						<div class="gallery">
 
 
-							<figure class="image is-square">
-								<img src="ghost_th.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-							</figure>
 
 
-							<figure class="image is-square">
-								<img src="Azure_th.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-							</figure>
+							<a href="Azure.jpg" class="image">
+								<img src="Azure_th.jpg" alt="">
+							</a>
+
+							<a href="gw.jpg" class="image">
+								<img src="gw_th.jpg" alt="">
+							</a>
 
 
-							<figure class="image is-square">
-								<img src="gw_th.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-							</figure>
+
+
+
+							<a href="gothic.jpg" class="image">
+								<img src="gothic_th.jpg" alt="">
+							</a>
+
+							<a href="gothic2.jpg" class="image">
+								<img src="gothic2_th.jpg" alt="">
+							</a>
+
+							<a href="orc.jpg" class="image">
+								<img src="orc_th.jpg" alt="">
+							</a>
+
+							<a href="godzilla.jpg" class="image">
+								<img src="godzilla_th.jpg" alt="">
+							</a>
+
+							<a href="ghost.jpg" class="image">
+								<img src="ghost_th.jpg" alt="">
+							</a>
+
+							<a href="swan.jpg" class="image">
+								<img src="swan_th.jpg" alt="">
+							</a>
 						</div>
-
-
-						<div class = "tile is-1 is-vertical is-parent is-half-on-mobile">
-
-							<figure class="image is-square">
-								<img src="knight_th.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" >
-							</figure>
-
-
-							<figure class="image is-square">
-								<img src="orc_th.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-							</figure>
-
-
-							<figure class="image is-square">
-								<img src="gothic_th.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
-							</figure>
-
-
-							<figure class="image is-square">
-								<img src="gothic2_th.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
-							</figure>
-						</div>
-
-						<div class = "tile is-1 is-vertical is-parent is-mobile">
-
-							<figure class="image is-square">
-								<img src="godzilla_th.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" >
-							</figure>
-
-						</div>
-
-
 					</div>
 				</div>
-			</section>
 
 
 
 
-			<!-- The Modal/Lightbox -->
-			<div id="myModal" class="modal">
-				<span class="close cursor" onclick="closeModal()">&times;</span>
-				<div class="modal-content">
-
-					<div class="mySlides">
-						<div class="numbertext">1 / 9</div>
-						<img src="swan.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">2 / 9</div>
-						<img src="ghost.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">3 / 9</div>
-						<img src="Azure.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">4 / 9</div>
-						<img src="gw.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">5 / 9</div>
-						<img src="knight.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">6 / 9</div>
-						<img src="orc.jpg" style="width:100%">
-					</div>
 
 
-					<div class="mySlides">
-						<div class="numbertext">7 / 9</div>
-						<img src="gothic.jpg" style="width:100%">
-					</div>
 
-					<div class="mySlides">
-						<div class="numbertext">8 / 9</div>
-						<img src="gothic2.jpg" style="width:100%">
-					</div>
 
-					<div class="mySlides">
-						<div class="numbertext">9 / 9</div>
-						<img src="godzilla.jpg" style="width:100%">
-					</div>
 
-					<!-- Next/previous controls -->
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-					<!-- Caption text -->
-					<div class="caption-container">
-						<p id="caption"></p>
+
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 9</div>
+							<img src="swan.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 9</div>
+							<img src="ghost.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 9</div>
+							<img src="Azure.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 9</div>
+							<img src="gw.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 9</div>
+							<img src="knight.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 9</div>
+							<img src="orc.jpg" style="width:100%">
+						</div>
+
+
+						<div class="mySlides">
+							<div class="numbertext">7 / 9</div>
+							<img src="gothic.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">8 / 9</div>
+							<img src="gothic2.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">9 / 9</div>
+							<img src="godzilla.jpg" style="width:100%">
+						</div>
+
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
 					</div>
 				</div>
+
 			</div>
-
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer class="footer has-background-black ">
-	<div class="content has-text-centered ">
-		<div class="container has-text-centered">
-			<p class = "is-size-24 has-text-dark">
-				ALL IMAGES ARE COPYRIGHTED TO THEIR RESPECTIVE RIGHTHOLDERS. UNAUTHORIZED USE OR REPRODUCTION IS NOT ALLOWED
-			</p>
+	<footer class="footer has-background-black ">
+		<div class="content has-text-centered ">
+			<div class="container has-text-centered">
+				<p class = "is-size-24 has-text-dark">
+					ALL IMAGES ARE COPYRIGHTED TO THEIR RESPECTIVE RIGHTHOLDERS. UNAUTHORIZED USE OR REPRODUCTION IS NOT ALLOWED
+				</p>
+			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
+
 </body>
 </html>
 
@@ -243,4 +244,13 @@ function showSlides(n) {
 			dots[slideIndex-1].className += " active";
 			captionText.innerHTML = dots[slideIndex-1].alt;
 		}
+
+		$(".gallery").magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery:{
+				enabled: true
+			}
+		});
+
 	</script>
