@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibrahim Hindawi</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+<body style = "background-color: #282828;">
+
+
+
+		<!--<p style="color:black">
+		Gallery
+	</p>-->
+
+
+	<!-- START NAV -->
+    <nav class="navbar  navbar-height ">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" >
+                        <!-- <img src="gw_th.jpg" alt="Logo" class="image is-128x128"> -->
+                        <div class="title">Ibrahim Hindawi</div>
+                        <div class="subtitle">3D GENERALIST</div>
+                    </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end ">
+                    <a class="navbar-item is-active" href="index.html">
+                            Gallery
+                        </a>
+                    <a class="navbar-item">
+                            Videos
+                        </a>
+                    <a class="navbar-item"  href="about.html">
+                            About
+                        </a>
+                    <a class="navbar-item" href="contact.html">
+                            Contact
+                        </a>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+
+
+
+	<!-- Images used to open the lightbox -->
+	<div class="columns">
+		<div class="column">
+			<img src="swan_th.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+		</div>
+
+		<div class="column">
+			<img src="ghost_th.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="Azure_th.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="gw_th.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="knight_th.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="orc_th.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="godzilla_th.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="gothic_th.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="gothic2_th.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+		</div>				  
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="swan.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="ghost.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="Azure.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="gw.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="knight.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="orc.jpg" style="width:100%">
+			</div>
+
+
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="godzilla.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="gothic.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="gothic2.jpg" style="width:100%">
+			</div>
+
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<script>
+// Open the Modal
+function openModal() {
+	document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
